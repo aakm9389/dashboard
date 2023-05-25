@@ -1,0 +1,27 @@
+
+#produit1{
+    text-align: center;
+    margin-left: 240px;
+}
+
+#produit1 .pro-container{
+    display: flex;
+    
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+.Modification{
+    display: block;
+    padding: 20px;
+}
+.table input{
+    padding: 5px;
+    margin: 5px;
+    border-radius:10%;
+    width: 20%;
+}
+.table button{
+    padding: 5px;
+    margin: 2px;
+    background-color: #FFC107;
+}

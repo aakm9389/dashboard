@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    font-family : 'Poppins', sans-serif ;
+}
+
+
+.contPrincipal{
+    /* margin:20px 0; */
+    margin-left: 220px;
+}
+
+.cont{
+    display: flex;
+    margin: 2% 0px;
+
+}
+
+.bloc{
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.bloc:hover {
+    box-shadow: rgba(46, 130, 240, 0.4) -5px 5px, rgba(46, 114, 240, 0.3) -10px 10px, rgba(49, 46, 240, 0.2) -15px 15px;
+}
+
+
+
+.cont2{
+    display: flex;
+    margin: 2% 0px;
+}
+
+@media (max-width: 600px) {
+    .cont{
+        flex-direction: column;
+        margin: 0;
+    
+    }
+
+    .cont2{
+        flex-direction: column;
+        margin:  0;
+    }
+    .contPrincipal{
+        margin: 0;
+    }
+
+    .bloc{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+}
+
+/* Tableau*/
+.contenu2{
+    margin: 100px 10px;
+}
+h2{
+    text-align: center;
+}
+table  td, table th{
+    border: 1px solid #183661;
+   width: 100px;
+}
+table{
+    border-collapse:collapse;
+}
+table .aligngauche{
+    text-align: left;
+    font-size: 12px;
+}
+thead tr th{
+    font-size: 13px;
+    padding: auto;
+}
+
+.alignCenter{
+    font-size: 12px;
+    background-color: #18366186;
+    color: white;
+}
+tbody td{
+    font-size: 11px;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+}
+
+tbody td:hover{
+    background-color:#183661;
+    color:white;
+}
+tbody th{
+    border-left: none;
+     border-right: none;
+     padding-left: 5px;
+}
+
+.cont, .contenu2{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+@media (max-width: 600px) {
+    table .aligngauche{
+        font-size: 9px;
+    }
+    thead tr th{
+        font-size: 10px;
+        padding: auto;
+    }
+
+    .contenu2 h2{
+        font-size: 14px;
+    }
+    
+    .alignCenter{
+        font-size: 9px;
+    }
+
+    tbody tr td{
+        font-size: 8px;
+        text-align: center;
+    }
+
+}

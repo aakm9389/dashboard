@@ -1,0 +1,55 @@
+<div class="container-dash">
+  <div class="navside">
+      <div class="logo">
+          <p><span>Ika</span>Boutique</p>
+      </div>
+      <a routerLinkActive="Active" routerLink="/bash" class="active"><span class="material-icons-sharp">grid_view</span> Dashboard</a>
+      <a routerLinkActive="Active" routerLink="/statistique"><span class="material-icons-sharp">stacked_bar_chart</span> Statistiques</a>
+      <a routerLinkActive="Active" routerLink="/produit"><span class="material-icons-sharp">inventory</span> Produits</a>
+      <a routerLinkActive="Active" routerLink="/commande"><span class="material-icons-sharp">local_shipping</span> Commandes</a>
+      <a routerLinkActive="Active" routerLink="/achat"><span class="material-icons-sharp">shopping_cart</span> Achats</a>
+      <a routerLinkActive="Active" routerLink="/inventaire"><span class="material-icons-sharp">card_giftcard</span> Inventaires</a>
+      <a routerLinkActive="Active" routerLink="/rapport"><span class="material-icons-sharp">report_gmailerrorred</span> Rapport</a>
+      <a routerLinkActive="Active" routerLink="/connexion"><span class="material-icons-sharp">logout</span> Connexion</a>
+      <a routerLinkActive="Active" routerLink="/para"class="settings"><span class="material-icons-sharp">settings</span> Paramètre</a>
+  </div>
+
+  
+  <nav class="nav-menu">
+      <div class="toggle">
+          <span class="material-icons-sharp">menu</span>
+          <input type="email" placeholder="Recherche...">
+      </div>
+
+      <div class="info">
+          <!-- nav message -->
+          <nav class="sms">
+              <ul>
+                  <li><a href="#chat"><span class="material-icons-sharp icon">message</span> Message </a></li>
+              </ul>
+          </nav>
+          <!-- nav notification -->
+          <nav class="noti">
+              <ul>
+                  <li><a routerLink="/notif"><span class="material-icons-sharp icon">notifications</span> Notification </a></li>
+              </ul>
+          </nav>
+          <!-- nav profils -->
+          <nav class="img">
+              <ul>
+                  <li><a routerLink="/profil"><img src="../assets/img/admin.jpg" alt="image de l'administrateur"> Profil </a></li>
+              </ul>
+          </nav>
+      </div>
+  </nav>
+  
+</div>
+
+
+
+
+<router-outlet></router-outlet>
+
+<footer>
+    <app-footer></app-footer>
+</footer>

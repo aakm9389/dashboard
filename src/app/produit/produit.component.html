@@ -1,0 +1,64 @@
+<section id="produit1" class="section-p1" >
+    <h1 style="font-size: 40px;">Produits</h1>
+    <hr style="border: 1px solid #ffc107;">
+    <form action="/recherche" method="get">
+      <input type="text"  [(ngModel)]="critereRecherche" name="q" placeholder="Rechercher..." />
+      <button type="submit">Rechercher</button>
+    </form>
+    <div class="pro-container" *ngIf="!vue" >
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" style="color: #FFC107">id#</th>
+              <th scope="col" style="color: #FFC107">Désignation</th>
+              <th scope="col" style="color: #FFC107">Déscription</th>
+              <th scope="col" style="color: #FFC107">Prix-Unitaire</th>
+              <th scope="col" style="color: #FFC107">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let produit of HommeHabit   ; let indexOfelement= index; ">
+              <th scope="row"> {{indexOfelement+1}} </th>
+              <td> {{produit.marque}} </td>
+              <td>{{produit.description}}</td>
+              <td>{{produit.prix}}</td>
+              <td><i class="fa fa-pencil-square" style="color: #183661; padding: 5px; size: 15px;" (click)="OnModif(produit)" aria-hidden="true"></i> 
+             
+                <i class="fa fa-trash"  style="color: #FFC107;" aria-hidden="true" (click)="OnSupprimer(indexOfelement)" ></i></td>
+            </tr>
+          </tbody>
+        </table> 
+      </div>
+    <div *ngIf="modif" >
+      <div class="grid-container" >
+        <div class="grid-item" style="flex: 0 0 calc(100% / 3);">
+          <div class="row">
+            <div class="col" style="justify-content: center; padding-top: 4% ;">
+              <div class="card"  >
+            <form class="table" >
+             
+            <label for="nom">Nom </label>
+           <input type="text" [(ngModel)]="Mark"  name="Mark" id="nom"><br>
+
+           <label for="des">Description </label>
+           <input type="text"[(ngModel)]="Descrip" name="Descrip" id="des"><br>
+
+           <label for="pri">Prix U </label>
+           <input type="text" [(ngModel)]="Prixx"name="Prixx" id="pri">
+           <div class="Modification">
+           <button (click)="OnRetour()" style="color:#df2b0f">Annuler</button>
+           <button type="submit" style="color:#183661">Modifier</button>
+          </div>
+          </form>
+                </div>
+      
+           
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <button type="submit" style="color: #FFC107; width:10%; background-color: #183661 ;">Ajouter</button>
+   </section>

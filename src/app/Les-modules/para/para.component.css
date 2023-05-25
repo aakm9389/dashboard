@@ -1,0 +1,165 @@
+
+.parametre-container {
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-left: 240px;
+  
+}
+
+.couverture {
+  width: 100%;
+  height: 200px;
+  background-color: #183661;
+  position: relative;
+}
+
+.couverture a {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.profil {
+  position: absolute;
+}
+
+.profil i {
+  color: #FFC107;
+  font-size: 20px;
+  position: relative;
+  left: -40px;
+  cursor: pointer;
+  top: -10px;
+}
+
+.profil img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.contenaire-setting {
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 240px;
+}
+
+.setting-left {
+  padding: 0 50px 50px 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 5px rgba(17, 39, 71, 0.1);
+  transition: all .3s ease-in-out;
+}
+
+.setting-left:hover {
+  box-shadow: 1px 1px 5px 5px rgba(38, 105, 206, 0.2);
+}
+
+.setting-left h2
+{
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+.nom {
+  margin-right: 30px;
+}
+
+.input input {
+  width: 240px;
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  outline-color: #183661;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  margin: 10px 0;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+form p {
+  margin-bottom: 30px;
+  color: #FFC107;
+}
+
+.changer a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: #183661;
+  padding: 18px;
+  border-radius: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: all .3s ease;
+}
+
+.changer a:hover {
+  background-color: #112747;
+  transform: scale(0.98);
+}
+
+.setting-right {
+  padding: 0 30px 30px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 5px rgba(17, 39, 71, 0.1);
+  transition: all .3s ease-in-out;
+  height: 40%;
+}
+
+.setting-right:hover {
+  box-shadow: 1px 1px 5px 5px rgba(38, 105, 206, 0.2);
+}
+
+.setting-right h2
+{
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.compt {
+  margin-bottom: 30px;
+}
+
+.compt i{
+  border: 2px dotted #183661;
+  padding: 10px;
+  border-radius: 50%;
+  color: #183661;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.reseau {
+  margin: 10px;
+}
+
+.reseau i{
+  border: 2px solid #183661;
+  padding: 10px;
+  border-radius: 50%;
+  color: #183661;
+  cursor: pointer;
+  margin-right: 10px;
+}

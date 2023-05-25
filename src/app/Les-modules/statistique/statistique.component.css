@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+}
+.contPrincipal{
+    /* margin:20px 0; */
+    margin-left: 220px;
+}
+
+.cont{
+    display: flex;
+    margin: 2% 0px;
+
+}
+
+.bloc{
+    width: 45%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.bloc:hover {
+    box-shadow: rgba(46, 130, 240, 0.4) -5px 5px, rgba(46, 114, 240, 0.3) -10px 10px, rgba(49, 46, 240, 0.2) -15px 15px;
+}
+
+.venteParmois{
+    margin-right: 30px;
+    
+}
+.separateur{
+    
+    border-right: 2px solid #a3caff; 
+}
+
+.cont2{
+    display: flex;
+    margin: 2% 0px;
+}
+
+@media (max-width: 600px) {
+    .cont{
+        flex-direction: column;
+        margin: 0;
+    
+    }
+    .venteParmois{ 
+        border-right: none; 
+        border-bottom: 2px solid #9abff3; 
+
+    }
+
+    .cont2{
+        flex-direction: column;
+        margin:  0;
+    }
+    .contPrincipal{
+        margin: 0;
+    }
+
+    .venteParmois{
+        margin-right: 0;
+        
+    }
+    .bloc{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .achatParMois, .CommandeParmois{
+        border-bottom: 1px solid #9abff3;
+    }
+    
+
+    
+}
